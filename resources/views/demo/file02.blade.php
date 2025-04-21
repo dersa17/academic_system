@@ -8,12 +8,22 @@
             >
                 <div>
                     <h3 class="fw-bold mb-3">Dashboard</h3>
-                    <h6 class="op-7 mb-2">Halaman untuk file 01</h6>
+                    <h6 class="op-7 mb-2">Halaman untuk file 02</h6>
                 </div>
                 <div class="ms-md-auto py-2 py-md-0">
                     <a href="#" class="btn btn-label-info btn-round me-2">Manage</a>
                     <a href="#" class="btn btn-primary btn-round">Add Customer</a>
                 </div>
+            </div>
+            <div>
+                <p>Person Name: {{$abc}}</p>
+                <ul>
+                    @foreach($temans as $teman)
+                        <li>
+                            {{$teman}}
+                        </li>
+                    @endforeach
+                </ul>
             </div>
             <div class="row">
                 <div class="col-sm-6 col-md-3">
